@@ -908,7 +908,7 @@ function initMap() {
         marker.addListener('click', () => {
             
             // Prepends 'samples/' to the image name
-            const imagePath = 'samples/' + markerInfo.name; 
+            const imagePath = markerInfo.name; 
 
             // **CHANGE: Only include the image in the contentString**
             const contentString = `
@@ -1253,4 +1253,5 @@ function initMap() {
         });
     </script>
 </body>
+
 </html>
